@@ -1,3 +1,3 @@
 FROM openjdk:9
-COPY target/test-demo-1.0-SNAPSHOT.jar test-demo-1.0-SNAPSHOT.jar
+COPY target/java-deployment-1.0-SNAPSHOT.jar java-deployment-1.0-SNAPSHOT.jar
 ENTRYPOINT ["java", "-jar", "test-demo-1.0-SNAPSHOT.jar"]
