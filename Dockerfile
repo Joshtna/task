@@ -1,3 +1,6 @@
 FROM openjdk:9
-COPY target/java-hello-world.jar-1.0-SNAPSHOT.jar java-hello-world-1.0-SNAPSHOT.jar
-ENTRYPOINT ["java", "-jar", "java-hello-world-1.0-SNAPSHOT.jar"]
+# COPY target/java-hello-world.jar-1.0-SNAPSHOT.jar java-hello-world-1.0-SNAPSHOT.jar
+ARG JAR_FILE=/var/lib/jenkins/workspace/demo-pipeline/target/java-hello-world-1.0-SNAPSHOT.jar
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java", "-jar", "/app.jar"]
+
