@@ -4,5 +4,5 @@ FROM openjdk:9
 ARG JAR_FILE=/var/lib/jenkins/workspace/demo-pipeline/target/java-hello-world-1.0-SNAPSHOT.jar
 #WORKDIR mkdir /app
 #COPY ${JAR_FILE} app.jar
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+ENTRYPOINT ["java", "-jar", "/var/lib/jenkins/workspace/demo-pipeline/target/java-hello-world.jar"]
 
