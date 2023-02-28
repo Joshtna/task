@@ -7,24 +7,8 @@
   <version>1.0-SNAPSHOT</version>
   <name>java-hello-world-webapp Maven Webapp</name>
   <url>http://maven.apache.org</url>        
-<!--   <build> -->
-<!--     <finalName>java-hello-world</finalName> -->
-<!--   </build> -->
-  <build>  
-    <plugin>
-        <plugin>  
-            <!-- Build an executable JAR -->  
-            <groupId>org.apache.maven.plugins</groupId>  
-            <artifactId>maven-jar-plugin</artifactId>  
-            <version>3.1.0</version>  
-            <configuration>  
-                <archive>  
-                    <manifest>  
-                        <mainClass>com.javatpoint.AppMain</mainClass>  
-                    </manifest>  
-                </archive>  
-            </configuration>  
-        </plugin>  
-    </plugin>
-</build>  
+  <build> 
+     <finalName>java-hello-world</finalName> 
+ </build> 
+  
 </project>
