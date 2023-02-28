@@ -11,6 +11,7 @@
 <!--     <finalName>java-hello-world</finalName> -->
 <!--   </build> -->
   <build>  
+    <plugin>
         <plugin>  
             <!-- Build an executable JAR -->  
             <groupId>org.apache.maven.plugins</groupId>  
@@ -24,6 +25,6 @@
                 </archive>  
             </configuration>  
         </plugin>  
- 
+    </plugin>
 </build>  
 </project>
