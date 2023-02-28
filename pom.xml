@@ -10,14 +10,4 @@
   <build>
     <finalName>java-hello-world</finalName>
   </build>
-  <plugins>
-    <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-        <configuration>
-            <mainClass>com.baeldung.demo.DemoApplication</mainClass>
-            <layout>JAR</layout>
-        </configuration>
-    </plugin>
-</plugins>
 </project>
