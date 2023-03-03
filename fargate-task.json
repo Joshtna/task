@@ -2,7 +2,7 @@
   "containerDefinitions": [
         {
             "name": "app",
-            "image": "363254031734.dkr.ecr.ap-northeast-1.amazonaws.com/test-demo:tag",
+            "image": "kodekloud/ecs-project1",
             "portMappings": [
                 { 
                     "containerPort": 3000,
