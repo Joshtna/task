@@ -1,18 +1,22 @@
-{  "cluster": "TestCluster", 
+{ 
+ "cluster": "TestCluster", 
  "serviceName": "fargate-Service", 
  "taskDefinition": "sample-fargate", 
  "desiredCount": 1,
  "launchType": "FARGATE",
  "platformVersion": "LATEST", 
- "networkConfiguration": {   
+ "networkConfiguration": 
+ {   
    "awsvpcConfiguration": {     
      "subnets": [       
        "subnet-0ae8f1d3db58850d4",
         "subnet-09fc85c3ca56a8d6c",
        "subnet-00b8ca294928b3ddc"    
      ],    
-     "securityGroups": ["sg-07588f12e5e5a6f84 "],   
-     "assignPublicIp": "ENABLED"    }  },  
+     "securityGroups": ["sg-07588f12e5e5a6f84"],   
+     "assignPublicIp": "ENABLED" 
+   } 
+ },  
      "schedulingStrategy": "REPLICA", 
      "enableECSManagedTags": true, 
  "propagateTags": "SERVICE"
