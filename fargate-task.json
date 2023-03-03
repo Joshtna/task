@@ -20,7 +20,7 @@
                     "awslogs-region": "ap-northeast-1",
                     "awslogs-stream-prefix": "ecs"
                 }
-            }
+            },
     "family": "sample-fargate",
     "executionRoleArn": "arn:aws:iam::363254031734:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
