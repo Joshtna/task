@@ -1,38 +1,25 @@
-
+{
   "containerDefinitions": [
         {
             "name": "app",
             "image": "363254031734.dkr.ecr.ap-northeast-1.amazonaws.com/test-demo:tag",
-         
             "portMappings": [
-                {
-                   
+                { 
                     "containerPort": 3000,
                     "hostPort": 3000,
-                    "protocol": "tcp",
-                   
+                    "protocol": "tcp"
                 }
-            ],
-            
+            ]
         }
     ],
     "family": "sample-fargate",
     "executionRoleArn": "arn:aws:iam::363254031734:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
     "volumes": [],
-    "status": "ACTIVE",
-   
     "placementConstraints": [],
-   
     "requiresCompatibilities": [
         "FARGATE"
     ],
     "cpu": "512",
-    "memory": "1024",
-    "runtimePlatform": {
-        "cpuArchitecture": "X86_64",
-        "operatingSystemFamily": "LINUX"
-    }
- 
+    "memory": "1024"
 }
