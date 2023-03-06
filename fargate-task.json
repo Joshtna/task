@@ -10,9 +10,7 @@
                     "protocol": "tcp"
                 }
             ]
-        }
-    ],
-    "logConfiguration": {
+           "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
                     "awslogs-create-group": "true",
@@ -21,7 +19,8 @@
                     "awslogs-stream-prefix": "ecs"
                 }
             },
-
+        }
+    ],
     "family": "sample-fargate",
     "executionRoleArn": "arn:aws:iam::363254031734:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
